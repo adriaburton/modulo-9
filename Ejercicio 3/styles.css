@@ -1,0 +1,188 @@
+body {
+  margin:0;
+  padding:0;
+  background: #1c2b2d;
+}
+
+.container {
+  margin-top: 7%;
+  z-index: 1;
+}
+
+.card {
+  background: #e6d5b8;
+}
+
+.form-control {
+  background: #f3f4ed;
+}
+
+.formulario__lable {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-control {
+  cursor: pointer;
+}
+
+.forumlario__grupo-input {
+  position: relative;
+}
+
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.formulario__validacion-estado {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.formulario__mensaje {
+  height: 40px;
+  line-height: 40px;
+  background: #f66060;
+  color: black;
+  padding: 0 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+.formulario__mensaje-activo {
+  display: block;
+}
+
+.formulario__mensaje-exito {
+  margin-top: 10px;
+  height: 38px;
+  line-height: 38px;
+  background: #1c2b2d;
+  color: white;
+  padding: 0 15px;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+.formulario__grupo-input {
+  position: relative;
+}
+
+.formulario__input-error-activo {
+  margin-top: 6px;
+  display: block;
+}
+
+.formulario__checkbox {
+  margin-right: 10px;
+}
+
+/*
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
+  grid-column: span 2;
+}*/
+
+.formulario__validacion-estado {
+  top: 10px;
+  opacity: 0;
+}
+
+.formulario__mensaje-activo {
+  display: block;
+}
+
+.formulario__mensaje p {
+  margin: 0;
+}
+
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto, .formulario__label {
+  color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+/*Modal*/
+
+
+/*.formulario__grupo-incorrecto, .form-control {
+  border: 1px solid #bb2929;
+}
+*/
+
+.modal-container {
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:fixed ;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width:100%;
+  transition: opacity 0.3s ease;
+ 
+  
+ 
+}
+.modal-container.show{
+  pointer-events: auto;
+  opacity: 1;
+  
+}
+
+.modal{
+  background: #e6d5b8;
+  padding: 30px 50px;
+  height: 325px;
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+  margin-top:15%;
+  border: 3px black solid;
+  border-radius: 10px;
+
+}
+
+.boton-modal{
+  pointer-events: auto;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}

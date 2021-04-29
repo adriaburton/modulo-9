@@ -1,0 +1,137 @@
+body {
+  background: #1c2b2d;
+}
+
+.container {
+  margin-top: 7%;
+}
+
+.card {
+  background: #e6d5b8;
+}
+
+.form-control {
+  background: #f3f4ed;
+}
+
+.formulario__lable {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-control {
+  cursor: pointer;
+}
+
+.forumlario__grupo-input {
+  position: relative;
+}
+
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.formulario__validacion-estado {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.formulario__mensaje {
+  height: 40px;
+  line-height: 40px;
+  background: #f66060;
+  color: black;
+  padding: 0 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+.formulario__mensaje-activo {
+  display: block;
+}
+
+.formulario__mensaje-exito {
+  margin-top: 10px;
+  height: 38px;
+  line-height: 38px;
+  background: #1c2b2d;
+  color: white;
+  padding: 0 15px;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+.formulario__grupo-input {
+  position: relative;
+}
+
+.formulario__input-error-activo {
+  margin-top: 6px;
+  display: block;
+}
+
+.formulario__checkbox {
+  margin-right: 10px;
+}
+
+/*
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
+  grid-column: span 2;
+}*/
+
+.formulario__validacion-estado {
+  top: 10px;
+  opacity: 0;
+}
+
+.formulario__mensaje-activo {
+  display: block;
+}
+
+.formulario__mensaje p {
+  margin: 0;
+}
+
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto, .formulario__label {
+  color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+
+/*.formulario__grupo-incorrecto, .form-control {
+  border: 1px solid #bb2929;
+}
